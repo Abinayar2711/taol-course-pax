@@ -1,8 +1,12 @@
 # TAOL Course & Pax — Year-wise, Apex-wise
 
-Courses and participants for four apexes — **Karnataka, Telangana, Andhra Pradesh,
-Tamil Nadu** — split into **Happiness / Rural / C&T / Other**, on either a calendar
-or a financial year.
+Courses and participants by apex — **Karnataka, Telangana, Andhra Pradesh** —
+split into **Happiness / Rural / C&T / Other**, on either a calendar or a
+financial year.
+
+Tamil Nadu is held back for now. Its data is still built and still in the
+parquet; `HIDDEN_APEXES` in `build_state_data.py` controls what the app shows, so
+bringing it back is one line plus a rebuild.
 
 ```bash
 pip install -r requirements.txt

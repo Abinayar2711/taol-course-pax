@@ -46,6 +46,12 @@ STATES = ["Karnataka", "Telangana", "Andhra Pradesh", "Tamil Nadu"]
 # Ashram Apex owns courses held in Karnataka.
 APEXES = STATES
 
+# Which apexes the dashboard actually shows. Tamil Nadu is held back for now
+# (7 Aug 2026) -- its data is still built and still in the parquet, so putting it
+# back is this one line plus a rebuild, and does not need the warehouse.
+HIDDEN_APEXES = ["Tamil Nadu"]
+SHOW_APEXES = [a for a in APEXES if a not in HIDDEN_APEXES]
+
 # The app opens on TAOL only. The others (VVMVP, SSIAST, VVKI...) are still in the
 # parquet so they can be ticked back on -- in these four states they are ~1% of pax.
 DEFAULT_ORGS = ["TAOL"]
@@ -68,8 +74,6 @@ DESK_BUCKETS = {
     "YLTP  DESK": "Rural Programs",          # note the double space, as stored
     "Children and Teens Desk": "C&T Programs",
 }
-
-RURAL = re.compile(r"\brural\b", re.I)
 
 RURAL = re.compile(r"\brural\b", re.I)
 
@@ -245,7 +249,7 @@ GROUP BY 1, 2, 3, 4, 5, 6, 7
         "states": sorted(df["state"].unique().tolist()),
         "default_states": STATES,
         "apexes": sorted(df["apex"].unique().tolist()),
-        "default_apexes": APEXES,
+        "default_apexes": SHOW_APEXES,
         "orgs": sorted(df["org"].unique().tolist()),
         "default_orgs": [o for o in DEFAULT_ORGS if o in set(df["org"])],
         "buckets": BUCKETS,
