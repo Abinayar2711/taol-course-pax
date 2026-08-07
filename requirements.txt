@@ -1,0 +1,7 @@
+streamlit>=1.30
+pandas>=2.0
+pyarrow>=12.0
+
+# Only build_state_data.py needs this, and only on the office network. The
+# deployed app never touches the warehouse -- it reads data/*.parquet.
+psycopg2-binary>=2.9

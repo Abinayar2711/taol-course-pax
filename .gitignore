@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Never commit raw source data — only the small aggregates in data/*.parquet are needed
+../taol_staging_course_teacher.csv
+*staging_course_teacher.csv
+*civicrm_value_teacher_other_info*.csv
+all_teachers.csv
+*.zip
+
+# Diagnostic build outputs. `data/` (parity) is the published set; these are only
+# produced by `build_from_warehouse.py --variant faithful|both` for comparison.
+data_warehouse_faithful/
+data_parity/
+
+# OS / editor junk
+.DS_Store
+.streamlit/secrets.toml

@@ -1,0 +1,128 @@
+{
+  "built_on": "2026-08-07",
+  "asof": "2026-08",
+  "variant": "parity",
+  "states": [
+    "(not set)",
+    "Andaman and Nicobar Islands",
+    "Andhra Pradesh",
+    "Chhattisgarh",
+    "Delhi",
+    "Karnataka",
+    "Madhya Pradesh",
+    "Maharashtra",
+    "Pondicherry",
+    "Tamil Nadu",
+    "Telangana",
+    "West Bengal"
+  ],
+  "default_states": [
+    "Karnataka",
+    "Telangana",
+    "Andhra Pradesh",
+    "Tamil Nadu"
+  ],
+  "apexes": [
+    "Andhra Pradesh",
+    "Ashram Apex",
+    "Chhattisgarh",
+    "HO",
+    "Himachal Pradesh",
+    "Jharkhand",
+    "Karnataka",
+    "Odisha",
+    "Rajasthan",
+    "Tamil Nadu",
+    "Telangana",
+    "Uttar Pradesh West"
+  ],
+  "default_apexes": [
+    "Karnataka",
+    "Telangana",
+    "Andhra Pradesh",
+    "Tamil Nadu"
+  ],
+  "orgs": [
+    "SSIAST",
+    "TAOL",
+    "VVKI",
+    "VVKIOLD",
+    "VVMVP"
+  ],
+  "default_orgs": [
+    "TAOL"
+  ],
+  "buckets": [
+    "Happiness Programs",
+    "Rural Programs",
+    "C&T Programs",
+    "Other Programs"
+  ],
+  "bucket_rules": {
+    "Happiness Programs": "Tag `HP` \u2014 and not a Rural program.",
+    "Rural Programs": "Course title contains the word **Rural**, whatever its tag. Checked first, so a Rural Happiness Program counts as Rural, not Happiness. (The grouping file files Rural HP under `YLTP`, which is why the rule keys off the title rather than the tag.)",
+    "C&T Programs": "Children & Teens \u2014 tags `C&T-PY-Institutional`, `C&T-PY-NonInstitutional`, `C&T-PY-Special`, `C&T-PY2-NonInstitutional`, `C&T-UY-MY-Institutional`, `C&T-UY-MY-NonInstitutional`, `KYC-KYT`, `UY_MY Upgrade`, `IP repeaters`",
+    "Other Programs": "Everything else \u2014 Sahaj, AMP, SSY, DSN, VTP, Institutional/YES!+, TTP, YLTP, Wellness, Spine, Sanyam, Blessing, and any title with no tag at all."
+  },
+  "desk_buckets": {
+    "Happiness Program": "Happiness Programs",
+    "YLTP  DESK": "Rural Programs",
+    "Children and Teens Desk": "C&T Programs"
+  },
+  "default_excluded": [
+    "Sudarshan Chakra Kriya",
+    "Deep Sleep and Anxiety Relief (Online)",
+    "Deep Sleep & Anxiety Relief (In-Person)",
+    "SELP",
+    "Online HAMP",
+    "Immunity Enhancement Program - Meditation, Breath and Yoga",
+    "Covid Recovery Program - Meditation, Breath and Yoga",
+    "Post Covid Recovery Program - Meditation, Breath and Yoga",
+    "IDY 2021",
+    "Rural ArtExcel",
+    "Rural YES"
+  ],
+  "desks": [
+    "(none)",
+    "Ayur Jagruti",
+    "Ayurveda Cooking Desk",
+    "Children and Teens Desk",
+    "Corporate Desk",
+    "Eternityprocess",
+    "GEP DESK",
+    "Happiness Program",
+    "KYC DESK",
+    "Living Well Program Desk",
+    "MSME",
+    "PART 2 and DSN DESK",
+    "PRISON SMART",
+    "Pran Desk",
+    "SSIAST",
+    "Sahaj Samadhi Meditation Desk",
+    "Spine Care",
+    "Sri Sri School of Yoga",
+    "Sri Sri yoga DESK",
+    "TTP desk",
+    "VTP Desk",
+    "VVMVP_Desk",
+    "Vedic Math Desk",
+    "Wellness Program Desk",
+    "YES+",
+    "YLTP  DESK"
+  ],
+  "ct_tags": [
+    "C&T-PY-Institutional",
+    "C&T-PY-NonInstitutional",
+    "C&T-PY-Special",
+    "C&T-PY2-NonInstitutional",
+    "C&T-UY-MY-Institutional",
+    "C&T-UY-MY-NonInstitutional",
+    "KYC-KYT",
+    "UY_MY Upgrade",
+    "IP repeaters"
+  ],
+  "filters": [
+    "CRF submitted (crf_consider IS NOT NULL)",
+    "event status is not 'Cancelled'"
+  ]
+}
