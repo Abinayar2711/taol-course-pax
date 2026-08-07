@@ -62,6 +62,21 @@ st.markdown("""
 div[data-testid="stPopover"] button { border:0; background:transparent;
     padding:.1rem 0; font-weight:400; text-align:left; justify-content:flex-start; }
 div[data-testid="stPopover"] button:hover { color:var(--brand); }
+
+/* Selected-course chips, and the radio / checkbox marks. Streamlit themes these
+   from primaryColor (set to the same blue in .streamlit/config.toml); these
+   rules are the belt to that braces, since the chip markup is BaseWeb's. */
+span[data-baseweb="tag"] {
+  background-color: var(--brand) !important;
+  border-color: var(--brand) !important;
+  color: #fff !important;
+}
+span[data-baseweb="tag"] svg { fill:#fff !important; }
+div[data-baseweb="select"] > div:focus-within {
+  border-color: var(--brand) !important;
+  box-shadow: 0 0 0 1px var(--brand) !important;
+}
+li[role="option"][aria-selected="true"] { background-color: var(--brand-soft) !important; }
 </style>
 """, unsafe_allow_html=True)
 

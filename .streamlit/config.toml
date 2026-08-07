@@ -1,0 +1,5 @@
+# Streamlit's default primaryColor is red (#FF4B4B), which is what tinted the
+# multiselect chips, the radio dots and the focus rings. Everything here is the
+# same blue the tables use.
+[theme]
+primaryColor = "#1f5fa9"
