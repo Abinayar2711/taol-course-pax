@@ -135,6 +135,12 @@ warehouse holds, and the next step is an event-by-event diff for a single month.
 
 ## Next
 
+- **Decide whether unticked courses should roll into *Other Programs* rather than
+  disappear.** Today the total drops them, so Karnataka CY2025 reads 8,054
+  programs / 51,809 pax against 8,577 / 66,512 of actual activity. Rolling them
+  into Other keeps Happiness / Rural / C&T tight while the total stays complete.
+  Already done that way in the 7 Aug Karnataka Excel; deliberately not in the app
+  yet, pending that conversation.
 - **Split *Other Programs*** into its own rows for **PART 2 and DSN DESK** and
   **Sri Sri yoga DESK**, leaving the remainder as Other. One entry each in
   `DESK_BUCKETS` plus the new names in `BUCKETS`, then rebuild — the app reads the
