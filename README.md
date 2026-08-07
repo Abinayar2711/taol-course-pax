@@ -42,8 +42,8 @@ Geography is `apex_name`, never `course_event_state`. The difference is large
 **Pax nearly doubles on the held-in basis while the program count barely moves.**
 The gap is Ashram Apex — courses held in Karnataka but owned by the ashram, ~28
 participants each against ~4.8 for the Karnataka apex. Apex is the basis the state
-reports use, so it is the only basis offered here. `course_event_state` remains
-available as a cross-filter ("of our courses, which ran outside the state").
+reports use, so it is the only basis offered. `course_event_state` remains as the
+"Held in state" filter, for "of our courses, which ran outside the state".
 
 ## The four program types — desk-first
 
@@ -57,16 +57,17 @@ website tag file, which misfiles several:
 | Happiness Program for Youth, OMBW for Youth | Other, via YES+ desk ✅ | Happiness ❌ |
 
 `Happiness Program` desk → Happiness, `YLTP  DESK` (two spaces, as stored) →
-Rural, `Children and Teens Desk` → C&T, everything else → Other. The tag grouping
-stays selectable for comparison and warns when chosen; the two disagree on **58 of
-366** course titles. `data/program_bucket_map.csv` lists every title with its tag,
-desk and bucket under both.
+Rural, `Children and Teens Desk` → C&T, everything else → Other. The two
+groupings disagree on **58 of 366** course titles;
+`data/program_bucket_map.csv` lists every title under both, for reference.
 
-### Eleven titles start unticked
+### The program type labels are dropdowns
 
-They belong to their desk, but are not what people mean by that program type. They
-are in the dropdown, just off by default, so the dashboard opens on the
-conservative number:
+Each program type in each apex section opens a list of its course names
+(`name_en_gb`). Untick a course and that section's row and total move with it.
+
+Eleven titles start unticked. They belong to their desk, but are not what people
+mean by that program type, so the dashboard opens on the conservative number:
 
 - **Happiness desk, not happiness programs** — Sudarshan Chakra Kriya (1,267
   programs / 31,921 pax), Deep Sleep & Anxiety Relief, SELP (23 programs but ~10k
@@ -76,9 +77,11 @@ conservative number:
   default because they would otherwise inflate the older years
 - **C&T by desk, Rural by name** — Rural ArtExcel, Rural YES
 
-Excluding anything *beyond* that list raises a "not the numbers to circulate"
-banner. Re-ticking a default-excluded title does not — that is a legitimate
-choice, not a distortion.
+A program type showing "(n off)" has n courses unticked.
+
+The sidebar carries only what changes the answer: calendar or financial year,
+which years, and which held-in states. Org is fixed to TAOL, geography to apex,
+grouping to course desk.
 
 ## Rebuilding the data
 
