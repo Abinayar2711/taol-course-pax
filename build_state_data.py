@@ -100,12 +100,17 @@ DEFAULT_SELECTED = {
     ],
 }
 
-# C&T is a rule instead: everything except the school / government-school
-# batches. It cannot key off course_category -- that flags Art Excel, Utkarsha
-# Yoga and Yes! as institutional too -- so it keys off the title. SSRVM is an
-# Art of Living school chain, hence the third term.
-SCHOOL = re.compile(r"school|govt|ssrvm", re.I)
-RULE_EXCLUDED = {"C&T Programs": lambda title: bool(SCHOOL.search(title))}
+# C&T is a rule instead of a list -- the bucket has ~120 titles. Off by default:
+#   school / govt / ssrvm  the school batches. This cannot key off
+#                          course_category, which flags Art Excel, Utkarsha Yoga
+#                          and Yes! as institutional too, so it keys off the
+#                          title. SSRVM is an Art of Living school chain.
+#   kyc / kyt              Know Your Child and Know Your Teen are courses for
+#                          parents, not children's programs.
+#   deaf                   the deaf-and-mute special-needs batches.
+CT_OFF = re.compile(
+    r"school|govt|ssrvm|\bkyc\b|\bkyt\b|know your (child|teen)|deaf", re.I)
+RULE_EXCLUDED = {"C&T Programs": lambda title: bool(CT_OFF.search(title))}
 
 # "Other Programs" has no default exclusions: everything in it starts ticked.
 
