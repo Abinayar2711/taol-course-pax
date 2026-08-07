@@ -127,3 +127,16 @@ every course-type subset of the Happiness family. The Postgres staging base tabl
 **Resolving it needs the report's date range from whoever produced it.** If it
 really is Jan–Dec, then that source is missing about half the courses the
 warehouse holds, and the next step is an event-by-event diff for a single month.
+
+## Next
+
+- **Split *Other Programs*** into its own rows for **PART 2 and DSN DESK** and
+  **Sri Sri yoga DESK**, leaving the remainder as Other. One entry each in
+  `DESK_BUCKETS` plus the new names in `BUCKETS`, then rebuild — the app reads the
+  row list from `state_meta.json`, so nothing else changes.
+- **Decide `TAOL Yoga and Meditation Program for Educators`.** The Children and
+  Teens desk owns it, so it counts in C&T, but it is an adult course for school
+  teachers (32 programs / 943 pax all-time, 15 / 407 in 2025). Leaning toward
+  default-unticked. Same for `Online TAOL Yoga & Meditation Program for Educators`.
+- **Refresh is manual.** `build_state_data.py` must run on the office network,
+  then commit and push. No timer here yet, unlike the teacher dashboard.
