@@ -72,7 +72,7 @@ What starts ticked, per bucket:
 |---|---|
 | **Happiness** | Only *Happiness Program (3 Days)*, *Online Meditation and Breath Workshop*, *Happiness Program*. The other 18 titles in the desk — Sudarshan Chakra Kriya, Deep Sleep, SELP, the Covid-era campaigns, the Spl AoL programs, Part I Course — start off. |
 | **Rural** | Only *Rural Happiness Program* and *YLTP*. Online YLTP, OWLTP, WLTP, AMP - Rural, Online Rural Happiness Program and Project Bharat start off. |
-| **C&T** | Everything except the school batches, the KYC/KYT parenting courses and the deaf-and-mute batches — titles matching `school`, `govt`, `ssrvm`, `kyc`, `kyt`, `know your child/teen` or `deaf`. 42 titles start off. It cannot key off `course_category`: that flags Art Excel, Utkarsha Yoga and Yes! as institutional too. |
+| **C&T** | Everything except the school batches, the KYC/KYT parenting courses, the special-needs batches and the Smart programs — titles matching `school`, `govt`, `ssrvm`, `kyc`, `kyt`, `know your child/teen`, `deaf`, `blind` or `smart`. 46 titles start off. It cannot key off `course_category`: that flags Art Excel, Utkarsha Yoga and Yes! as institutional too. |
 | **Other** | Everything on. |
 
 Note *Part I Course* and *3 Days Part I Course* are the Happiness Program under

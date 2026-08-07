@@ -107,9 +107,11 @@ DEFAULT_SELECTED = {
 #                          title. SSRVM is an Art of Living school chain.
 #   kyc / kyt              Know Your Child and Know Your Teen are courses for
 #                          parents, not children's programs.
-#   deaf                   the deaf-and-mute special-needs batches.
+#   deaf / blind           the special-needs batches.
+#   smart                  Smart Excel and SMART YES!.
 CT_OFF = re.compile(
-    r"school|govt|ssrvm|\bkyc\b|\bkyt\b|know your (child|teen)|deaf", re.I)
+    r"school|govt|ssrvm|\bkyc\b|\bkyt\b|know your (child|teen)"
+    r"|deaf|blind|smart", re.I)
 RULE_EXCLUDED = {"C&T Programs": lambda title: bool(CT_OFF.search(title))}
 
 # "Other Programs" has no default exclusions: everything in it starts ticked.
