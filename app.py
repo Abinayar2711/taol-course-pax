@@ -81,15 +81,28 @@ li[role="option"][aria-selected="true"] { background-color: var(--brand-soft) !i
 """, unsafe_allow_html=True)
 
 
+PARQUET = os.path.join(DATA, "state_program.parquet")
+META = os.path.join(DATA, "state_meta.json")
+
+
+def _sig(path):
+    st_ = os.stat(path)
+    return (st_.st_mtime_ns, st_.st_size)
+
+
 @st.cache_data
-def load():
-    df = pd.read_parquet(os.path.join(DATA, "state_program.parquet"))
-    with open(os.path.join(DATA, "state_meta.json")) as fh:
+def load(sig):
+    """`sig` is the files' (mtime, size). It is unused inside, and that is the
+    point: st.cache_data keys on the arguments, not on file contents, so without
+    it a server that was already running keeps serving the previous build's meta
+    after a data refresh -- which silently ticked every course back on."""
+    df = pd.read_parquet(PARQUET)
+    with open(META) as fh:
         meta = json.load(fh)
     return df, meta
 
 
-df, meta = load()
+df, meta = load((_sig(PARQUET), _sig(META)))
 df = df[df["org"] == ORG]
 BUCKETS = meta["buckets"]
 APEXES = [a for a in meta["default_apexes"] if a in set(df[GEO])]
@@ -109,6 +122,13 @@ year_sel = st.sidebar.multiselect(basis, years_all, default=years_all[:3])
 held_all = sorted(df["state"].unique())
 held_sel = st.sidebar.multiselect("Held in state", held_all, default=held_all)
 
+if st.sidebar.button("Reset course selection"):
+    st.session_state.pop("excl", None)
+    st.session_state.pop("excl_version", None)
+    for k in [k for k in st.session_state if str(k).startswith("pick::")]:
+        del st.session_state[k]
+    st.rerun()
+
 st.sidebar.caption(f"Warehouse build {meta['built_on']} · to {meta['asof']} · "
                    f"org {ORG} · apex-wise · by course desk")
 
@@ -122,9 +142,24 @@ scope = df[df[YCOL].isin(year_sel) & df["state"].isin(held_sel)]
 # Course exclusions are remembered per apex and per program type, as an exclusion
 # set rather than a selection, so a title that momentarily leaves the year scope
 # comes back when it returns.
+DEFAULTS = meta.get("default_excluded_by_bucket")
+if DEFAULTS is None:
+    st.info("This build has no default course selection — every course is "
+            "counted. Rebuild with build_state_data.py to restore it.")
+    DEFAULTS = {}
+
+# Reseed whenever the build changes, so an open browser session does not keep a
+# previous build's defaults (or lack of them).
+seed_version = f"{meta['built_on']}::" + "::".join(
+    f"{b}:{len(v)}" for b, v in sorted(DEFAULTS.items()))
+if st.session_state.get("excl_version") != seed_version:
+    st.session_state.pop("excl", None)
+    for k in [k for k in st.session_state if str(k).startswith("pick::")]:
+        del st.session_state[k]
+    st.session_state["excl_version"] = seed_version
+
 if "excl" not in st.session_state:
-    seed = {b: set(v) for b, v in
-            meta.get("default_excluded_by_bucket", {}).items()}
+    seed = {b: set(v) for b, v in DEFAULTS.items()}
     st.session_state["excl"] = {}
     for a in APEXES:
         for b in BUCKETS:
