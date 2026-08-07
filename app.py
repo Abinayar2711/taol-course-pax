@@ -123,13 +123,15 @@ scope = df[df[YCOL].isin(year_sel) & df["state"].isin(held_sel)]
 # set rather than a selection, so a title that momentarily leaves the year scope
 # comes back when it returns.
 if "excl" not in st.session_state:
-    seed = set(meta.get("default_excluded", []))
+    seed = {b: set(v) for b, v in
+            meta.get("default_excluded_by_bucket", {}).items()}
     st.session_state["excl"] = {}
     for a in APEXES:
         for b in BUCKETS:
-            titles = set(df.loc[(df[GEO] == a) & (df[BCOL] == b), "program"]) & seed
-            if titles:
-                st.session_state["excl"][(a, b)] = titles
+            titles = set(df.loc[(df[GEO] == a) & (df[BCOL] == b), "program"])
+            off = titles & seed.get(b, set())
+            if off:
+                st.session_state["excl"][(a, b)] = off
 
 
 def _sync(apex, bucket, key, opts):

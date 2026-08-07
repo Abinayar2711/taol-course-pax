@@ -59,29 +59,94 @@
     "Other Programs"
   ],
   "bucket_rules": {
-    "Happiness Programs": "Tag `HP` \u2014 and not a Rural program.",
-    "Rural Programs": "Course title contains the word **Rural**, whatever its tag. Checked first, so a Rural Happiness Program counts as Rural, not Happiness. (The grouping file files Rural HP under `YLTP`, which is why the rule keys off the title rather than the tag.)",
-    "C&T Programs": "Children & Teens \u2014 tags `C&T-PY-Institutional`, `C&T-PY-NonInstitutional`, `C&T-PY-Special`, `C&T-PY2-NonInstitutional`, `C&T-UY-MY-Institutional`, `C&T-UY-MY-NonInstitutional`, `KYC-KYT`, `UY_MY Upgrade`, `IP repeaters`",
-    "Other Programs": "Everything else \u2014 Sahaj, AMP, SSY, DSN, VTP, Institutional/YES!+, TTP, YLTP, Wellness, Spine, Sanyam, Blessing, and any title with no tag at all."
+    "Happiness Programs": "Programs owned by the Happiness Program desk.",
+    "Rural Programs": "Programs owned by the YLTP desk.",
+    "C&T Programs": "Programs owned by the Children and Teens desk.",
+    "Other Programs": "Every other desk \u2014 Sahaj, Sri Sri Yoga, Part 2 & DSN, YES+, TTP, VTP, Pran, Prison Smart, Eternity, Wellness, Spine."
   },
   "desk_buckets": {
     "Happiness Program": "Happiness Programs",
     "YLTP  DESK": "Rural Programs",
     "Children and Teens Desk": "C&T Programs"
   },
-  "default_excluded": [
-    "Sudarshan Chakra Kriya",
-    "Deep Sleep and Anxiety Relief (Online)",
-    "Deep Sleep & Anxiety Relief (In-Person)",
-    "SELP",
-    "Online HAMP",
-    "Immunity Enhancement Program - Meditation, Breath and Yoga",
-    "Covid Recovery Program - Meditation, Breath and Yoga",
-    "Post Covid Recovery Program - Meditation, Breath and Yoga",
-    "IDY 2021",
-    "Rural ArtExcel",
-    "Rural YES"
-  ],
+  "default_excluded_by_bucket": {
+    "Happiness Programs": [
+      "3 Days Part I Course",
+      "Covid Recovery Program - Meditation, Breath and Yoga",
+      "Deep Sleep and Anxiety Relief (Online)",
+      "Happiness Connect",
+      "Happiness Program + Sahaj Samadhi Dhyana Yoga",
+      "IDY 2021",
+      "Immunity Enhancement Program - Meditation, Breath and Yoga",
+      "Online HAMP",
+      "Online Meditation and Breath + Sahaj Samadhi Program",
+      "Part I Course",
+      "Post Covid Recovery Program - Meditation, Breath and Yoga",
+      "SELP",
+      "Spl AoL Program for Media Professionals",
+      "Spl AoL Program for Police",
+      "Spl AoL Program for Revenue Officials",
+      "Spl Art of Living Program for Doctors",
+      "Spl Art of Living Program for Medical Support Staff",
+      "Sudarshan Chakra Kriya"
+    ],
+    "Rural Programs": [
+      "AMP - Rural",
+      "OWLTP",
+      "Online Rural Happiness Program",
+      "Online YLTP Program",
+      "Project Bharat - Seva Yoddha Training",
+      "WLTP"
+    ],
+    "C&T Programs": [
+      "Children CCP in schools - Immunity Boost And Prevention",
+      "Govt. School MY1",
+      "Govt. School Online MY1",
+      "Govt. School UY",
+      "IP Junior Free School M1",
+      "IP Junior Free School M2",
+      "IP Junior Free School Vacation M1",
+      "IP Junior SSRVM",
+      "IP Junior School M1",
+      "IP Junior School M2",
+      "IP Junior School Vacation M1",
+      "IP Kids Free School M1",
+      "IP Kids Free School Vacation M1",
+      "IP Kids School M1",
+      "IP Kids School Vacation M1",
+      "IP Kids or Teens Free School M2",
+      "IP Kids or Teens Free School M3",
+      "IP Kids or Teens Free School Vacation M2",
+      "IP Kids or Teens School M2",
+      "IP Kids or Teens School M3",
+      "IP Kids or Teens School Vacation M2",
+      "IP Senior SSRVM",
+      "IP Teens Free School M1",
+      "IP Teens Free School Vacation M1",
+      "IP Teens School M1",
+      "IP Teens School Vacation M1",
+      "School Medha Yoga 1 Upgrade",
+      "School Medha Yoga 2",
+      "School Medha Yoga Level 1",
+      "School Online KYC",
+      "School Online MY1",
+      "School Online UY",
+      "School Utkarsha Yoga",
+      "School Utkarsha Yoga Upgrade",
+      "Teens CCP in schools - Immunity Boost And Prevention"
+    ]
+  },
+  "default_selected": {
+    "Happiness Programs": [
+      "Happiness Program (3 Days)",
+      "Online Meditation and Breath Workshop",
+      "Happiness Program"
+    ],
+    "Rural Programs": [
+      "Rural Happiness Program",
+      "YLTP"
+    ]
+  },
   "desks": [
     "(none)",
     "Ayur Jagruti",

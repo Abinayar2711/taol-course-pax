@@ -66,16 +66,19 @@ groupings disagree on **58 of 366** course titles;
 Each program type in each apex section opens a list of its course names
 (`name_en_gb`). Untick a course and that section's row and total move with it.
 
-Eleven titles start unticked. They belong to their desk, but are not what people
-mean by that program type, so the dashboard opens on the conservative number:
+What starts ticked, per bucket:
 
-- **Happiness desk, not happiness programs** — Sudarshan Chakra Kriya (1,267
-  programs / 31,921 pax), Deep Sleep & Anxiety Relief, SELP (23 programs but ~10k
-  pax), Online HAMP
-- **Covid-era campaigns** — Immunity Enhancement, Covid and Post-Covid Recovery,
-  IDY 2021. Kept under Happiness because they were delivered as HP variants, off by
-  default because they would otherwise inflate the older years
-- **C&T by desk, Rural by name** — Rural ArtExcel, Rural YES
+| Bucket | Default |
+|---|---|
+| **Happiness** | Only *Happiness Program (3 Days)*, *Online Meditation and Breath Workshop*, *Happiness Program*. The other 18 titles in the desk — Sudarshan Chakra Kriya, Deep Sleep, SELP, the Covid-era campaigns, the Spl AoL programs, Part I Course — start off. |
+| **Rural** | Only *Rural Happiness Program* and *YLTP*. Online YLTP, OWLTP, WLTP, AMP - Rural, Online Rural Happiness Program and Project Bharat start off. |
+| **C&T** | Everything except the school batches — any title matching `school`, `govt` or `ssrvm`. 35 titles start off, including School Utkarsha Yoga, Govt. School MY1/UY and the IP *School* variants. It cannot key off `course_category`: that flags Art Excel, Utkarsha Yoga and Yes! as institutional too. |
+| **Other** | Everything on. |
+
+Note *Part I Course* and *3 Days Part I Course* are the Happiness Program under
+its old name. They are off by default and effectively dormant anyway — 3,806
+programs in 2013, under 25 a year from 2015 — but pick a year before 2015 and
+Happiness will read low until you tick them back on.
 
 A program type showing "(n off)" has n courses unticked.
 

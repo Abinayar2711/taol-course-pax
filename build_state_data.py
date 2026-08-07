@@ -71,42 +71,59 @@ DESK_BUCKETS = {
 
 RURAL = re.compile(r"\brural\b", re.I)
 
-# Course titles that sit inside a desk bucket legitimately -- the desk really does
-# own them -- but that most people do not mean when they say "Happiness Programs"
-# or "C&T Programs". They stay in their bucket and stay in the dropdown, they just
-# start UNTICKED, so the opening number is the conservative one and anyone who
-# wants them has to say so. Decided with Abinaya, 7 Aug 2026.
-DEFAULT_EXCLUDED = [
-    # Happiness desk, but not happiness programs
-    "Sudarshan Chakra Kriya",
-    "Deep Sleep and Anxiety Relief (Online)",
-    "Deep Sleep & Anxiety Relief (In-Person)",
-    "SELP",
-    "Online HAMP",
-    # Covid-era campaigns. Kept in Happiness (they were delivered as HP variants)
-    # but off by default -- they would otherwise inflate the older years.
-    "Immunity Enhancement Program - Meditation, Breath and Yoga",
-    "Covid Recovery Program - Meditation, Breath and Yoga",
-    "Post Covid Recovery Program - Meditation, Breath and Yoga",
-    "IDY 2021",
-    # C&T by desk (children's programmes run in villages), but the Rural name
-    # makes people expect them in the Rural row.
-    "Rural ArtExcel",
-    "Rural YES",
-]
+RURAL = re.compile(r"\brural\b", re.I)
 
 BUCKET_RULES = {
-    "Happiness Programs": "Tag `HP` — and not a Rural program.",
-    "Rural Programs": (
-        "Course title contains the word **Rural**, whatever its tag. Checked "
-        "first, so a Rural Happiness Program counts as Rural, not Happiness. "
-        "(The grouping file files Rural HP under `YLTP`, which is why the rule "
-        "keys off the title rather than the tag.)"),
-    "C&T Programs": "Children & Teens — tags " + ", ".join(f"`{t}`" for t in CT_TAGS),
+    "Happiness Programs": "Programs owned by the Happiness Program desk.",
+    "Rural Programs": "Programs owned by the YLTP desk.",
+    "C&T Programs": "Programs owned by the Children and Teens desk.",
     "Other Programs": (
-        "Everything else — Sahaj, AMP, SSY, DSN, VTP, Institutional/YES!+, TTP, "
-        "YLTP, Wellness, Spine, Sanyam, Blessing, and any title with no tag at all."),
+        "Every other desk — Sahaj, Sri Sri Yoga, Part 2 & DSN, YES+, TTP, VTP, "
+        "Pran, Prison Smart, Eternity, Wellness, Spine."),
 }
+
+# What each program type counts BY DEFAULT. Everything else in the bucket is
+# still listed in the app's dropdown, just unticked, so the opening number is the
+# one people mean and anything extra has to be asked for. Decided with Abinaya,
+# 7 Aug 2026.
+#
+# Happiness and Rural are whitelists -- only these titles start ticked.
+DEFAULT_SELECTED = {
+    "Happiness Programs": [
+        "Happiness Program (3 Days)",
+        "Online Meditation and Breath Workshop",
+        "Happiness Program",
+    ],
+    "Rural Programs": [
+        "Rural Happiness Program",
+        "YLTP",
+    ],
+}
+
+# C&T is a rule instead: everything except the school / government-school
+# batches. It cannot key off course_category -- that flags Art Excel, Utkarsha
+# Yoga and Yes! as institutional too -- so it keys off the title. SSRVM is an
+# Art of Living school chain, hence the third term.
+SCHOOL = re.compile(r"school|govt|ssrvm", re.I)
+RULE_EXCLUDED = {"C&T Programs": lambda title: bool(SCHOOL.search(title))}
+
+# "Other Programs" has no default exclusions: everything in it starts ticked.
+
+
+def default_excluded_titles(df):
+    """Per bucket, the titles that start UNTICKED in the app."""
+    out = {}
+    for bucket, keep in DEFAULT_SELECTED.items():
+        titles = set(df.loc[df["desk_bucket"] == bucket, "program"])
+        off = sorted(titles - set(keep))
+        if off:
+            out[bucket] = off
+    for bucket, rule in RULE_EXCLUDED.items():
+        titles = set(df.loc[df["desk_bucket"] == bucket, "program"])
+        off = sorted(t for t in titles if rule(t))
+        if off:
+            out[bucket] = off
+    return out
 
 
 def bucket_of(program, tag):
@@ -227,7 +244,8 @@ GROUP BY 1, 2, 3, 4, 5, 6, 7
         "buckets": BUCKETS,
         "bucket_rules": BUCKET_RULES,
         "desk_buckets": DESK_BUCKETS,
-        "default_excluded": DEFAULT_EXCLUDED,
+        "default_excluded_by_bucket": default_excluded_titles(df),
+        "default_selected": DEFAULT_SELECTED,
         "desks": sorted(df["desk"].unique().tolist()),
         "ct_tags": CT_TAGS,
         "filters": ([] if args.raw else
