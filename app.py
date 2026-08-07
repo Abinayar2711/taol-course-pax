@@ -120,7 +120,11 @@ years_all = (sorted(df["fy"].unique(), key=fy_key, reverse=True) if YCOL == "fy"
 year_sel = st.sidebar.multiselect(basis, years_all, default=years_all[:3])
 
 held_all = sorted(df["state"].unique())
-held_sel = st.sidebar.multiselect("Held in state", held_all, default=held_all)
+held_sel = st.sidebar.multiselect(
+    "Course event state", held_all, default=held_all,
+    help="course_event_state -- where the course physically ran. The rows above "
+         "are by apex (who owns the course), so this narrows to the courses an "
+         "apex ran in a given state.")
 
 if st.sidebar.button("Reset course selection"):
     st.session_state.pop("excl", None)

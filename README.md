@@ -39,11 +39,12 @@ Geography is `apex_name`, never `course_event_state`. The difference is large
 | apex = Karnataka | 8,579 | 66,561 |
 | course_event_state = Karnataka | 9,806 | 118,279 |
 
-**Pax nearly doubles on the held-in basis while the program count barely moves.**
+**Pax nearly doubles on the course-event-state basis while the program count
+barely moves.**
 The gap is Ashram Apex — courses held in Karnataka but owned by the ashram, ~28
 participants each against ~4.8 for the Karnataka apex. Apex is the basis the state
 reports use, so it is the only basis offered. `course_event_state` remains as the
-"Held in state" filter, for "of our courses, which ran outside the state".
+"Course event state" filter, for "of our courses, which ran outside the state".
 
 ## The four program types — desk-first
 
@@ -83,7 +84,7 @@ Happiness will read low until you tick them back on.
 A program type showing "(n off)" has n courses unticked.
 
 The sidebar carries only what changes the answer: calendar or financial year,
-which years, and which held-in states. Org is fixed to TAOL, geography to apex,
+which years, and which course event states. Org is fixed to TAOL, geography to apex,
 grouping to course desk.
 
 ## Rebuilding the data
