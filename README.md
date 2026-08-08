@@ -1,8 +1,8 @@
 # TAOL Course & Pax — Year-wise, Apex-wise
 
 Courses and participants by apex — **Karnataka, Telangana, Andhra Pradesh** —
-split into **Happiness / Rural / C&T / Other**, on either a calendar or a
-financial year.
+split into **Happiness / Rural / C&T / Part 2 & DSN / Sri Sri Yoga / Other**, on
+either a calendar or a financial year.
 
 Tamil Nadu is held back for now. Its data is still built and still in the
 parquet; `HIDDEN_APEXES` in `build_state_data.py` controls what the app shows, so
@@ -40,8 +40,8 @@ Geography is `apex_name`, never `course_event_state`. The difference is large
 
 | Basis | Programs | Pax |
 |---|---|---|
-| apex = Karnataka | 8,579 | 66,561 |
-| course_event_state = Karnataka | 9,806 | 118,279 |
+| apex = Karnataka | 8,580 | 66,563 |
+| course_event_state = Karnataka | 9,807 | 118,281 |
 
 **Pax nearly doubles on the course-event-state basis while the program count
 barely moves.**
@@ -50,7 +50,7 @@ participants each against ~4.8 for the Karnataka apex. Apex is the basis the sta
 reports use, so it is the only basis offered. `course_event_state` remains as the
 "Course event state" filter, for "of our courses, which ran outside the state".
 
-## The four program types — desk-first
+## The program types — desk-first
 
 Grouping is by **`desk_name`**, the desk that owns the program. It beats the
 website tag file, which misfiles several:
@@ -61,9 +61,27 @@ website tag file, which misfiles several:
 | Yes! | C&T ✅ | Other ❌ |
 | Happiness Program for Youth, OMBW for Youth | Other, via YES+ desk ✅ | Happiness ❌ |
 
-`Happiness Program` desk → Happiness, `YLTP  DESK` (two spaces, as stored) →
-Rural, `Children and Teens Desk` → C&T, everything else → Other. The two
-groupings disagree on **58 of 366** course titles;
+Desk names are spelled exactly as the warehouse stores them, so `DESK_BUCKETS` is
+a lookup and never a match — odd capitalisation and all:
+
+| Row | `desk_name` |
+|---|---|
+| Happiness | `Happiness Program` |
+| Rural | `YLTP  DESK` (two spaces, as stored) |
+| C&T | `Children and Teens Desk` |
+| Part 2 & DSN | `PART 2 and DSN DESK` |
+| Sri Sri Yoga | `Sri Sri yoga DESK` **and** `Sri Sri School of Yoga` |
+| Other | everything else — Sahaj (the largest by far), YES+, TTP, VTP, Pran, Prison Smart, Eternity, Wellness, Ayurveda Cooking, Vedic Math, MSME, Spine, GEP |
+
+The School of Yoga is the judgement call: a second, much smaller yoga desk (218
+programs all-time) where 215 are ordinary Deep Dive and kids' yoga classes, titles
+that also appear under `Sri Sri yoga DESK`. Only a 200H and a 300H Yoga Teacher
+Training sit oddly. Move that one line to Other if the yoga row should be classes
+only.
+
+The two groupings disagree on **121 of 366** course titles — but 63 of those are
+just the Part 2 & DSN and Sri Sri Yoga titles, which the tag grouping has no row
+for. On the original four rows it is **58 of 366**, unchanged.
 `data/program_bucket_map.csv` lists every title under both, for reference.
 
 ### The program type labels are dropdowns
@@ -84,6 +102,8 @@ What starts ticked, per bucket:
 | **Happiness** | Only *Happiness Program (3 Days)*, *Online Meditation and Breath Workshop*, *Happiness Program*. The other 18 titles in the desk — Sudarshan Chakra Kriya, Deep Sleep, SELP, the Covid-era campaigns, the Spl AoL programs, Part I Course — start off. |
 | **Rural** | Only *Rural Happiness Program* and *YLTP*. Online YLTP, OWLTP, WLTP, AMP - Rural, Online Rural Happiness Program and Project Bharat start off. |
 | **C&T** | Everything except the school batches, the KYC/KYT parenting courses, the special-needs batches and the Smart programs — titles matching `school`, `govt`, `ssrvm`, `kyc`, `kyt`, `know your child/teen`, `deaf`, `blind` or `smart`. 46 titles start off. It cannot key off `course_category`: that flags Art Excel, Utkarsha Yoga and Yes! as institutional too. |
+| **Part 2 & DSN** | Everything on. |
+| **Sri Sri Yoga** | Everything on. |
 | **Other** | Everything on, including the courses unticked above. |
 
 Note *Part I Course* and *3 Days Part I Course* are the Happiness Program under
@@ -141,10 +161,6 @@ warehouse holds, and the next step is an event-by-event diff for a single month.
 
 ## Next
 
-- **Split *Other Programs*** into its own rows for **PART 2 and DSN DESK** and
-  **Sri Sri yoga DESK**, leaving the remainder as Other. One entry each in
-  `DESK_BUCKETS` plus the new names in `BUCKETS`, then rebuild — the app reads the
-  row list from `state_meta.json`, so nothing else changes.
 - **Decide `TAOL Yoga and Meditation Program for Educators`.** The Children and
   Teens desk owns it, so it counts in C&T, but it is an adult course for school
   teachers (32 programs / 943 pax all-time, 15 / 407 in 2025). Leaning toward

@@ -57,22 +57,37 @@ SHOW_APEXES = [a for a in APEXES if a not in HIDDEN_APEXES]
 DEFAULT_ORGS = ["TAOL"]
 
 # ---------------------------------------------------------------- buckets
-# The four rows of the Program Performance Report, expressed in the website
-# grouping file's own tag vocabulary. Nothing is invented here.
+# The original four rows of the Program Performance Report, expressed in the
+# website grouping file's own tag vocabulary. Nothing is invented here. This is
+# the reference grouping only -- it feeds bucket_by_tag in program_bucket_map.csv,
+# not the dashboard, which cuts by desk (DESK_BUCKETS below).
 CT_TAGS = ["C&T-PY-Institutional", "C&T-PY-NonInstitutional", "C&T-PY-Special",
            "C&T-PY2-NonInstitutional", "C&T-UY-MY-Institutional",
            "C&T-UY-MY-NonInstitutional", "KYC-KYT", "UY_MY Upgrade", "IP repeaters"]
 HP_TAGS = ["HP"]
 
-BUCKETS = ["Happiness Programs", "Rural Programs", "C&T Programs", "Other Programs"]
+# The rows of the dashboard, in the order they are drawn. Other is last: it is
+# the catch-all, and the app also drops into it any course unticked above.
+BUCKETS = ["Happiness Programs", "Rural Programs", "C&T Programs",
+           "Part 2 & DSN Programs", "Sri Sri Yoga Programs", "Other Programs"]
 
-# The same four rows, cut by course desk instead of by tag. Every other desk
-# (Sahaj, Sri Sri Yoga, Part 2 & DSN, YES+, TTP, VTP, Pran, Prison Smart,
-# Eternity, Wellness, Spine) falls to Other.
+# The rows, cut by course desk instead of by tag. Desk names are spelled exactly
+# as the warehouse stores them -- odd capitalisation and the double space in
+# "YLTP  DESK" included -- so this is a lookup, never a match.
+# Every remaining desk (Sahaj, YES+, TTP, VTP, Pran, Prison Smart, Eternity,
+# Wellness, Ayurveda Cooking, Vedic Math, MSME, Spine, GEP) falls to Other.
 DESK_BUCKETS = {
     "Happiness Program": "Happiness Programs",
     "YLTP  DESK": "Rural Programs",          # note the double space, as stored
     "Children and Teens Desk": "C&T Programs",
+    "PART 2 and DSN DESK": "Part 2 & DSN Programs",
+    "Sri Sri yoga DESK": "Sri Sri Yoga Programs",
+    # A second, much smaller yoga desk (218 programs all-time). 215 of them are
+    # ordinary Deep Dive and kids' yoga classes whose titles also appear under
+    # "Sri Sri yoga DESK", so they belong on the same row. The exceptions are one
+    # 200H and one 300H Yoga Teacher Training -- move this line to Other if the
+    # yoga row should be classes only.
+    "Sri Sri School of Yoga": "Sri Sri Yoga Programs",
 }
 
 RURAL = re.compile(r"\brural\b", re.I)
@@ -81,10 +96,13 @@ BUCKET_RULES = {
     "Happiness Programs": "Programs owned by the Happiness Program desk.",
     "Rural Programs": "Programs owned by the YLTP desk.",
     "C&T Programs": "Programs owned by the Children and Teens desk.",
+    "Part 2 & DSN Programs": "Programs owned by the Part 2 and DSN desk.",
+    "Sri Sri Yoga Programs": (
+        "Programs owned by the Sri Sri Yoga desk and the Sri Sri School of Yoga."),
     "Other Programs": (
-        "Every other desk — Sahaj, Sri Sri Yoga, Part 2 & DSN, YES+, TTP, VTP, "
-        "Pran, Prison Smart, Eternity, Wellness, Spine — plus any course "
-        "unticked under the three named types, so the Total stays complete."),
+        "Every other desk — Sahaj, YES+, TTP, VTP, Pran, Prison Smart, Eternity, "
+        "Wellness, Ayurveda Cooking, Vedic Math, MSME, Spine — plus any course "
+        "unticked under the named types, so the Total stays complete."),
 }
 
 # What each program type counts BY DEFAULT. Everything else in the bucket is

@@ -21,7 +21,7 @@ Online Know Your Child,KYC-KYT,Children and Teens Desk,C&T Programs,C&T Programs
 School Medha Yoga Level 1,C&T-UY-MY-Institutional,Children and Teens Desk,C&T Programs,C&T Programs,True,378,34852
 IP Teens Module 1,C&T-PY-NonInstitutional,Children and Teens Desk,C&T Programs,C&T Programs,False,371,1520
 IP Junior Module 1,C&T-PY-NonInstitutional,Children and Teens Desk,C&T Programs,C&T Programs,False,334,1392
-IP Junior Module 2,C&T-PY-NonInstitutional,Children and Teens Desk,C&T Programs,C&T Programs,False,327,1362
+IP Junior Module 2,C&T-PY-NonInstitutional,Children and Teens Desk,C&T Programs,C&T Programs,False,328,1363
 KYC,KYC-KYT,Children and Teens Desk,C&T Programs,C&T Programs,False,288,8005
 Online Know Your Teen,KYC-KYT,Children and Teens Desk,C&T Programs,C&T Programs,False,238,1879
 IP2,C&T-PY2-NonInstitutional,Children and Teens Desk,C&T Programs,C&T Programs,False,233,2621
@@ -94,9 +94,9 @@ Online SC MY1,C&T-UY-MY-Institutional,Children and Teens Desk,C&T Programs,C&T P
 PrajÃ±Ä Yoga(Juniors) for 5-8 yrs,C&T-PY-NonInstitutional,Children and Teens Desk,C&T Programs,C&T Programs,True,1,25
 School Medha Yoga 2,C&T-UY-MY-Institutional,Children and Teens Desk,C&T Programs,C&T Programs,False,1,10
 School Utkarsha Yoga Upgrade,UY_MY Upgrade,Children and Teens Desk,C&T Programs,C&T Programs,False,1,52
-Happiness Program (3 Days),HP,Happiness Program,Happiness Programs,Happiness Programs,False,24785,228303
-Online Meditation and Breath Workshop,HP,Happiness Program,Happiness Programs,Happiness Programs,False,23740,160878
-Happiness Program,HP,Happiness Program,Happiness Programs,Happiness Programs,False,21805,276187
+Happiness Program (3 Days),HP,Happiness Program,Happiness Programs,Happiness Programs,False,24789,228312
+Online Meditation and Breath Workshop,HP,Happiness Program,Happiness Programs,Happiness Programs,False,23741,160879
+Happiness Program,HP,Happiness Program,Happiness Programs,Happiness Programs,False,21806,276191
 Part I Course,HP,Happiness Program,Happiness Programs,Happiness Programs,False,18586,349024
 3 Days Part I Course,HP,Happiness Program,Happiness Programs,Happiness Programs,False,1979,34578
 Online Meditation and Breath Workshop for Youth,HP,YES+,Happiness Programs,Other Programs,False,1441,8489
@@ -114,21 +114,21 @@ TAOL Yoga and Meditation Program for Educators,HP,Children and Teens Desk,Happin
 Part I Course,HP,Happiness Program,Happiness Programs,Happiness Programs,True,2,17
 Online TAOL Yoga & Meditation Program for Educators,HP,Children and Teens Desk,Happiness Programs,C&T Programs,True,1,19
 PEP,HP,YES+,Happiness Programs,Other Programs,True,1,30
-Online Sahaj Samadhi Dhyana Yoga,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Other Programs,False,7789,37727
-Sahaj Samadhi Dhyana Yoga,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Other Programs,False,5372,83110
-Sri Sri Yoga Level -1,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,False,2812,74918
-Part 2,AMP,PART 2 and DSN DESK,Other Programs,Other Programs,False,2786,298812
-Online Sri Sri Yoga Classes,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,False,2775,38958
+Online Sahaj Samadhi Dhyana Yoga,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Other Programs,False,7790,37729
+Sahaj Samadhi Dhyana Yoga,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Other Programs,False,5377,83117
+Sri Sri Yoga Level -1,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,2812,74918
+Part 2,AMP,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,2786,298812
+Online Sri Sri Yoga Classes,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,2775,38958
 Yes!,(untagged),Children and Teens Desk,Other Programs,C&T Programs,False,2006,86939
 "Immunity Enhancement Program - Meditation, Breath and Yoga",others,Happiness Program,Other Programs,Happiness Programs,False,1949,45985
 YES!+,Institutional,YES+,Other Programs,Other Programs,False,1690,61574
 Eternity Process,Eternity,Eternityprocess,Other Programs,Other Programs,False,1491,9429
-Online 3days AMP,AMP,PART 2 and DSN DESK,Other Programs,Other Programs,False,1404,47784
+Online 3days AMP,AMP,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,1404,47784
 Sudarshan Chakra Kriya,others,Happiness Program,Other Programs,Happiness Programs,False,1267,31921
-Online Sri Sri Yoga LevelÂ  1,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,False,1197,15502
-Sri Sri Yoga Classes,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,False,1141,10247
-AMP 4 Days,AMP,PART 2 and DSN DESK,Other Programs,Other Programs,False,909,65272
-DSN,DSN,PART 2 and DSN DESK,Other Programs,Other Programs,False,869,36198
+Online Sri Sri Yoga LevelÂ  1,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,1197,15502
+Sri Sri Yoga Classes,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,1142,10248
+AMP 4 Days,AMP,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,909,65272
+DSN,DSN,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,869,36198
 "Post Covid Recovery Program - Meditation, Breath and Yoga",(untagged),Happiness Program,Other Programs,Happiness Programs,False,765,7658
 YLTP,YLTP,YLTP  DESK,Other Programs,Rural Programs,False,696,27889
 "Covid Recovery Program - Meditation, Breath and Yoga",others,Happiness Program,Other Programs,Happiness Programs,False,662,5794
@@ -136,20 +136,20 @@ Online Sahaj Samadhi Dhyana Yoga 1on1,Sahaj,Sahaj Samadhi Meditation Desk,Other 
 Sahaj Samadhi Dhyana Yoga 1on1,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Other Programs,False,546,548
 Prison Program for Inmates,others,PRISON SMART,Other Programs,Other Programs,False,544,34855
 Online Wellness Program,Wellness,Wellness Program Desk,Other Programs,Other Programs,False,542,4163
-SpineCare Yoga and Posture Program for Adults,Spine,Sri Sri yoga DESK,Other Programs,Other Programs,False,455,7983
-Deep Sleep and Anxiety Relief (Online),Deep Sleep,Happiness Program,Other Programs,Happiness Programs,False,420,3565
+SpineCare Yoga and Posture Program for Adults,Spine,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,455,7983
+Deep Sleep and Anxiety Relief (Online),Deep Sleep,Happiness Program,Other Programs,Happiness Programs,False,422,3567
 YES!+,Institutional,YES+,Other Programs,Other Programs,True,395,25062
 VTP,VTP,VTP Desk,Other Programs,Other Programs,False,393,8106
-Online Sri Sri Yoga Classes - Pre & Post Natal care,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,False,332,667
+Online Sri Sri Yoga Classes - Pre & Post Natal care,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,332,667
 Living Well Program,(untagged),Living Well Program Desk,Other Programs,Other Programs,False,313,5213
 Holistic Cooking Program,others,Ayurveda Cooking Desk,Other Programs,Other Programs,False,262,4053
-Blessing Course,Blessing,PART 2 and DSN DESK,Other Programs,Other Programs,False,242,12637
+Blessing Course,Blessing,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,242,12637
 Childrenâ€™s Covid Care Program - Immunity Boost & Prevention,(untagged),Children and Teens Desk,Other Programs,C&T Programs,False,241,8525
 APEX Mind Matters,(untagged),Corporate Desk,Other Programs,Other Programs,True,230,20213
 3 Days YES!+,Institutional,YES+,Other Programs,Other Programs,False,227,8679
 Online YLTP Program,YLTP,YLTP  DESK,Other Programs,Rural Programs,False,220,2194
 APEX BASIC,others,Corporate Desk,Other Programs,Other Programs,True,199,6659
-Sri Sri Yoga Deep Dive,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,False,198,4851
+Sri Sri Yoga Deep Dive,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,198,4851
 Wellness Program,Wellness,Wellness Program Desk,Other Programs,Other Programs,False,196,2368
 APEX,(untagged),Corporate Desk,Other Programs,Other Programs,False,195,5269
 Sri Sri Natya,others,(none),Other Programs,Other Programs,False,192,3544
@@ -157,56 +157,56 @@ APEX YOGA,(untagged),Corporate Desk,Other Programs,Other Programs,True,190,13794
 Excellence@workplace (MSME),(untagged),MSME,Other Programs,Other Programs,False,175,3622
 SSSK Foundation M1A Online,others,(none),Other Programs,Other Programs,False,168,1265
 Vedhic Mathematics,others,Vedic Math Desk,Other Programs,Other Programs,False,168,3933
-Online Sri Sri Yoga Deep Dive,SSY - All Programs,Sri Sri School of Yoga,Other Programs,Other Programs,False,164,3445
+Online Sri Sri Yoga Deep Dive,SSY - All Programs,Sri Sri School of Yoga,Other Programs,Sri Sri Yoga Programs,False,164,3445
 APEX BASIC,others,Corporate Desk,Other Programs,Other Programs,False,155,5147
 TTP Happiness,TTP,TTP desk,Other Programs,Other Programs,False,155,7356
 Online VTP,VTP,VTP Desk,Other Programs,Other Programs,False,152,2449
 IDY 2021,(untagged),Happiness Program,Other Programs,Happiness Programs,False,149,7717
-Yoga@work,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,True,145,14174
+Yoga@work,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,True,145,14174
 Online Women Wellness Program,Wellness,Wellness Program Desk,Other Programs,Other Programs,False,144,1156
-Online SpineCare Program for Adults,Spine,Sri Sri yoga DESK,Other Programs,Other Programs,False,136,2812
-AMP BusyBee,AMP,PART 2 and DSN DESK,Other Programs,Other Programs,False,129,3776
+Online SpineCare Program for Adults,Spine,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,136,2812
+AMP BusyBee,AMP,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,129,3776
 Stress Free Exams,(untagged),Children and Teens Desk,Other Programs,C&T Programs,False,126,25262
 GEP,(untagged),GEP DESK,Other Programs,Other Programs,True,124,6012
 Smart Excel,others,Children and Teens Desk,Other Programs,C&T Programs,False,124,9461
 Teens Covid Care Program - Immunity Boost & Prevention,(untagged),Children and Teens Desk,Other Programs,C&T Programs,False,123,3516
 SSM@workplace(MSME),(untagged),MSME,Other Programs,Other Programs,False,121,4317
 OWLTP,YLTP,YLTP  DESK,Other Programs,Rural Programs,False,111,1701
-Sri Sri Lemurrian Yoga,others,Sri Sri yoga DESK,Other Programs,Other Programs,False,106,1106
+Sri Sri Lemurrian Yoga,others,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,106,1106
 SMART YES!,others,Children and Teens Desk,Other Programs,C&T Programs,False,105,7893
 APEX Mind Matters,(untagged),Corporate Desk,Other Programs,Other Programs,False,101,6707
 SSSK Ramayan A Online,others,(none),Other Programs,Other Programs,False,100,672
 Happiness Program + Sahaj Samadhi Dhyana Yoga,combine,Happiness Program,Other Programs,Happiness Programs,False,95,624
-Shakti Kriya,ShaktiKriya,PART 2 and DSN DESK,Other Programs,Other Programs,False,95,7813
+Shakti Kriya,ShaktiKriya,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,95,7813
 iExcel Holistic Wellbeing,others,MSME,Other Programs,Other Programs,False,94,1163
 SSSK Foundation M1,others,(none),Other Programs,Other Programs,False,93,767
-Special DSN,DSN,PART 2 and DSN DESK,Other Programs,Other Programs,False,83,12256
+Special DSN,DSN,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,83,12256
 SSSK Foundation M1B Online,others,(none),Other Programs,Other Programs,False,82,529
 APEX 1,(untagged),Corporate Desk,Other Programs,Other Programs,False,78,2031
-Padmasadhana Instructor Trg,others,Sri Sri yoga DESK,Other Programs,Other Programs,False,73,248
-Sri Sri Yoga Classes for Kids,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,False,72,2322
-Sanyam 1,Sanyam,PART 2 and DSN DESK,Other Programs,Other Programs,False,71,7237
-Sri Sri Yoga Level 1-Certified Teachers,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,False,70,854
-Sri Sri Yoga Center,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,False,69,718
-Mini Yoga Program,others,Sri Sri yoga DESK,Other Programs,Other Programs,False,65,1372
+Padmasadhana Instructor Trg,others,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,73,248
+Sri Sri Yoga Classes for Kids,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,72,2322
+Sanyam 1,Sanyam,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,71,7237
+Sri Sri Yoga Level 1-Certified Teachers,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,70,854
+Sri Sri Yoga Center,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,69,718
+Mini Yoga Program,others,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,65,1372
 WLTP,YLTP,YLTP  DESK,Other Programs,Rural Programs,False,60,1116
-Online 4days AMP,AMP,PART 2 and DSN DESK,Other Programs,Other Programs,False,59,1324
+Online 4days AMP,AMP,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,59,1324
 Online SELP,Institutional,YES+,Other Programs,Other Programs,True,58,3354
-Sri Sri Lemurrian Yoga Part 1,others,Sri Sri yoga DESK,Other Programs,Other Programs,False,58,475
+Sri Sri Lemurrian Yoga Part 1,others,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,58,475
 APEX,(untagged),Corporate Desk,Other Programs,Other Programs,True,53,1304
 SSSK Ramayan B Online,others,(none),Other Programs,Other Programs,False,51,245
 The Art of Living Kids online,(untagged),Children and Teens Desk,Other Programs,C&T Programs,False,51,7813
-Online Sri Sri Yoga Classes for Kids,SSY - All Programs,Sri Sri School of Yoga,Other Programs,Other Programs,False,50,746
+Online Sri Sri Yoga Classes for Kids,SSY - All Programs,Sri Sri School of Yoga,Other Programs,Sri Sri Yoga Programs,False,50,746
 iExcel iLead,others,MSME,Other Programs,Other Programs,False,49,1125
-SSY,(untagged),Sri Sri yoga DESK,Other Programs,Other Programs,False,44,380
+SSY,(untagged),Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,44,380
 The Art of Living Teens online,(untagged),Children and Teens Desk,Other Programs,C&T Programs,False,44,4591
-Sri Sri Yoga Classes for Prenatal and Postnatal Care,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,False,41,62
+Sri Sri Yoga Classes for Prenatal and Postnatal Care,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,41,62
 3 Days YES!+,Institutional,YES+,Other Programs,Other Programs,True,40,4784
 Sri Sri Natural Farming,others,SSIAST,Other Programs,Other Programs,False,40,668
-AMP 5 Days,AMP,PART 2 and DSN DESK,Other Programs,Other Programs,False,38,8151
+AMP 5 Days,AMP,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,38,8151
 Online Yes+,Institutional,YES+,Other Programs,Other Programs,True,38,1576
 Sahaj Samadhi Dhyana Yoga,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Other Programs,True,37,865
-Online SpineCare Program forÂ  Children,(untagged),Sri Sri yoga DESK,Other Programs,Other Programs,False,36,1210
+Online SpineCare Program forÂ  Children,(untagged),Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,36,1210
 Wellness Program for Substance Users,Wellness,Pran Desk,Other Programs,Other Programs,False,36,222
 YLTP,YLTP,YLTP  DESK,Other Programs,Rural Programs,True,36,2722
 Spl Art of Living Program for Doctors,(untagged),Happiness Program,Other Programs,Happiness Programs,False,34,2555
@@ -217,9 +217,9 @@ Home Grown Home Cooked Permaculture session for beginners,(untagged),VVMVP_Desk,
 Sri Sri Marma,(untagged),Wellness Program Desk,Other Programs,Other Programs,False,31,110
 GEP,(untagged),GEP DESK,Other Programs,Other Programs,False,30,826
 Online Sri Sri Natural Farming,others,SSIAST,Other Programs,Other Programs,False,29,129
-PDS,others,Sri Sri yoga DESK,Other Programs,Other Programs,False,27,10409
-SYP 50Hrs Training,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,False,27,227
-Online SSY,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,False,26,78
+PDS,others,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,27,10409
+SYP 50Hrs Training,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,27,227
+Online SSY,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,26,78
 Online Meditation and Breath + Sahaj Samadhi Program,combine,Happiness Program,Other Programs,Happiness Programs,False,25,164
 Spl Art of Living Program for Medical Support Staff,(untagged),Happiness Program,Other Programs,Happiness Programs,False,25,496
 BCPE Core,(untagged),GEP DESK,Other Programs,Other Programs,True,24,590
@@ -227,29 +227,29 @@ Spl AoL Program for Media Professionals,others,Happiness Program,Other Programs,
 Spl AoL Program for Police,(untagged),Happiness Program,Other Programs,Happiness Programs,False,24,2429
 Online Home Gardening Training Program,others,SSIAST,Other Programs,Other Programs,False,23,130
 Startup Rekindle,others,Corporate Desk,Other Programs,Other Programs,False,23,332
-Sri Sri Yoga Level -1,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,True,22,746
+Sri Sri Yoga Level -1,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,True,22,746
 TTP MEDHAYOGA,TTP,TTP desk,Other Programs,Other Programs,False,22,643
-Yoga@work,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,False,22,719
+Yoga@work,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,22,719
 APEX 1,(untagged),Corporate Desk,Other Programs,Other Programs,True,21,351
 SELP,Institutional,Happiness Program,Other Programs,Happiness Programs,False,20,9090
 Training on Bee Keeping Level 1,others,SSIAST,Other Programs,Other Programs,False,20,197
 Yes!,(untagged),Children and Teens Desk,Other Programs,C&T Programs,True,20,1894
 Online Sahaj Samadhi Dhyana Yoga,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Other Programs,True,19,102
 Online Women Wellness Module,Wellness,Wellness Program Desk,Other Programs,Other Programs,False,19,116
-AMP Intensive,AMP,PART 2 and DSN DESK,Other Programs,Other Programs,False,18,2320
+AMP Intensive,AMP,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,18,2320
 Prison Program for Inmates,others,PRISON SMART,Other Programs,Other Programs,True,18,923
 SSSK Ramayan,others,(none),Other Programs,Other Programs,False,18,172
-SpineCare Yoga and Posture Workshop for Children,Spine,Sri Sri yoga DESK,Other Programs,Other Programs,False,17,669
+SpineCare Yoga and Posture Workshop for Children,Spine,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,17,669
 BCPE Sahaj,(untagged),GEP DESK,Other Programs,Other Programs,True,16,363
 Teens CCP in schools - Immunity Boost And Prevention,(untagged),Children and Teens Desk,Other Programs,C&T Programs,False,15,895
 Health@ Workplace(MSME),(untagged),MSME,Other Programs,Other Programs,False,14,1683
 SSSK Ramayan Camps,others,VVMVP_Desk,Other Programs,Other Programs,False,14,206
-Yogic Fitness Act I,(untagged),Sri Sri yoga DESK,Other Programs,Other Programs,False,14,420
-AMP 7 Days,AMP,PART 2 and DSN DESK,Other Programs,Other Programs,False,13,1766
+Yogic Fitness Act I,(untagged),Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,14,420
+AMP 7 Days,AMP,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,13,1766
 BCPE Yoga,(untagged),GEP DESK,Other Programs,Other Programs,True,13,326
 Sri Sri Mushroom Farming,others,SSIAST,Other Programs,Other Programs,False,13,46
 Online iExcel Holistic Well Being Program,others,MSME,Other Programs,Other Programs,False,12,108
-AMP 10 Days,AMP,PART 2 and DSN DESK,Other Programs,Other Programs,False,10,1519
+AMP 10 Days,AMP,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,10,1519
 SSSK TTC Hybrid,others,(none),Other Programs,Other Programs,False,10,308
 Sri Sri Home Gardening,others,SSIAST,Other Programs,Other Programs,False,10,37
 Stress Free Exams,(untagged),Children and Teens Desk,Other Programs,C&T Programs,True,10,926
@@ -260,7 +260,7 @@ iExcel iLead,others,MSME,Other Programs,Other Programs,True,10,246
 Corporate Programs part 2,(untagged),Corporate Desk,Other Programs,Other Programs,False,9,462
 Permaculture and Beyond,(untagged),VVMVP_Desk,Other Programs,Other Programs,False,9,126
 Project Bharat - Seva Yoddha Training,others,YLTP  DESK,Other Programs,Rural Programs,False,9,335
-Sri Sri Hatha Yoga Level 1,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,False,9,149
+Sri Sri Hatha Yoga Level 1,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,9,149
 Sri Sri Kids Gardening,others,SSIAST,Other Programs,Other Programs,False,9,63
 WP Booster Session,others,Wellness Program Desk,Other Programs,Other Programs,False,9,85
 Effortless Equanimity Meditation and Yoga,(untagged),Corporate Desk,Other Programs,Other Programs,True,8,106
@@ -275,15 +275,15 @@ Online HAMP,AMP,Happiness Program,Other Programs,Happiness Programs,False,5,60
 Online Meditation & Breath Workshop for Government Executives,others,GEP DESK,Other Programs,Other Programs,True,5,252
 Online PRAN,others,Wellness Program Desk,Other Programs,Other Programs,False,5,60
 SUKHAM YOGA RETREAT,others,(none),Other Programs,Other Programs,False,5,21
-Sri Sri Lemurrian Yoga Combo Program,others,Sri Sri yoga DESK,Other Programs,Other Programs,False,5,19
+Sri Sri Lemurrian Yoga Combo Program,others,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,5,19
 WP-SU Rehabs,others,Pran Desk,Other Programs,Other Programs,False,5,44
 Corporate Programs part 2,(untagged),Corporate Desk,Other Programs,Other Programs,True,4,92
 Manual Friendliness Session,(untagged),(none),Other Programs,Other Programs,False,4,49
 NOVICE TTC,(untagged),KYC DESK,Other Programs,Other Programs,False,4,91
 Online Sahaj Samadhi Dhyana Yoga 1on1,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Other Programs,True,4,4
-Prison Program Part 2,(untagged),PART 2 and DSN DESK,Other Programs,Other Programs,False,4,333
+Prison Program Part 2,(untagged),PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,4,333
 SMART YES!,others,Children and Teens Desk,Other Programs,C&T Programs,True,4,147
-Sri Sri Yoga Classes,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,True,4,293
+Sri Sri Yoga Classes,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,True,4,293
 TTP Karmayoga,TTP,(none),Other Programs,Other Programs,False,4,148
 Women Wellness Module,Wellness,Wellness Program Desk,Other Programs,Other Programs,False,4,19
 iDrive,(untagged),MSME,Other Programs,Other Programs,True,4,108
@@ -297,11 +297,11 @@ Program for Release from Addictions Naturally (P.R.A.N),(untagged),Wellness Prog
 SELP,Institutional,Happiness Program,Other Programs,Happiness Programs,True,3,900
 Sahaj Samadhi Dhyana Yoga 1on1,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Other Programs,True,3,3
 Smart Excel,others,Children and Teens Desk,Other Programs,C&T Programs,True,3,220
-Spine Care TTP,(untagged),Sri Sri School of Yoga,Other Programs,Other Programs,False,3,54
-SpineCare Yoga and Posture Workshop - SSRVM School,(untagged),Sri Sri yoga DESK,Other Programs,Other Programs,False,3,328
-Sri Sri Lemurrian Yoga Part 2,others,Sri Sri yoga DESK,Other Programs,Other Programs,False,3,11
+Spine Care TTP,(untagged),Sri Sri School of Yoga,Other Programs,Sri Sri Yoga Programs,False,3,54
+SpineCare Yoga and Posture Workshop - SSRVM School,(untagged),Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,3,328
+Sri Sri Lemurrian Yoga Part 2,others,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,3,11
 Sri Sri Meditation,(untagged),(none),Other Programs,Other Programs,False,3,152
-Sri Sri Yoga Classes for Kids,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,True,3,308
+Sri Sri Yoga Classes for Kids,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,True,3,308
 YLTP 1,(untagged),(none),Other Programs,Other Programs,False,3,86
 iIntegrate,(untagged),MSME,Other Programs,Other Programs,True,3,88
 LIVE,(untagged),KYC DESK,Other Programs,Other Programs,False,2,81
@@ -309,12 +309,12 @@ Online Low Cost Cold Storage Construction Course,others,SSIAST,Other Programs,Ot
 Online Sri Sri Kids Gardening Orientation,others,SSIAST,Other Programs,Other Programs,False,2,46
 Online Wellness Program for Substance Users,Wellness,Wellness Program Desk,Other Programs,Other Programs,False,2,2
 Residential SpineCare Yoga and Posture Program -Adults,Spine,Spine Care,Other Programs,Other Programs,False,2,14
-SHUDDHI,(untagged),Sri Sri School of Yoga,Other Programs,Other Programs,False,2,33
+SHUDDHI,(untagged),Sri Sri School of Yoga,Other Programs,Sri Sri Yoga Programs,False,2,33
 SSSK EES,(untagged),(none),Other Programs,Other Programs,False,2,18
-Sanyam 2,Sanyam,PART 2 and DSN DESK,Other Programs,Other Programs,False,2,1014
-SpineCare Yoga and Posture Program for Adults,Spine,Sri Sri yoga DESK,Other Programs,Other Programs,True,2,34
+Sanyam 2,Sanyam,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,2,1014
+SpineCare Yoga and Posture Program for Adults,Spine,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,True,2,34
 Spl AoL Program for Revenue Officials,(untagged),Happiness Program,Other Programs,Happiness Programs,False,2,190
-Sri Sri Hatha Yoga Level 2,(untagged),Sri Sri yoga DESK,Other Programs,Other Programs,False,2,14
+Sri Sri Hatha Yoga Level 2,(untagged),Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,2,14
 Sri Sri Natya,others,(none),Other Programs,Other Programs,True,2,24
 TTP Happiness,TTP,TTP desk,Other Programs,Other Programs,True,2,41
 Tapping your Inner potential for Success,(untagged),MSME,Other Programs,Other Programs,True,2,2080
@@ -323,25 +323,25 @@ VTP,VTP,VTP Desk,Other Programs,Other Programs,True,2,16
 Wellness Program,Wellness,Wellness Program Desk,Other Programs,Other Programs,True,2,8
 YES UTSAH,(untagged),(none),Other Programs,Other Programs,False,2,183
 iIntegrate,(untagged),MSME,Other Programs,Other Programs,False,2,60
-200H Yoga Teacher Training Course,(untagged),Sri Sri School of Yoga,Other Programs,Other Programs,False,1,37
-300H Yoga Teacher Training Course,(untagged),Sri Sri School of Yoga,Other Programs,Other Programs,False,1,11
+200H Yoga Teacher Training Course,(untagged),Sri Sri School of Yoga,Other Programs,Sri Sri Yoga Programs,False,1,37
+300H Yoga Teacher Training Course,(untagged),Sri Sri School of Yoga,Other Programs,Sri Sri Yoga Programs,False,1,11
 Agriculture Teachers Training Program,others,SSIAST,Other Programs,Other Programs,False,1,45
 Ayur Jagruti,(untagged),Ayur Jagruti,Other Programs,Other Programs,True,1,15
 Eternity Process,Eternity,Eternityprocess,Other Programs,Other Programs,True,1,9
 IDY 2021,(untagged),Happiness Program,Other Programs,Happiness Programs,True,1,27
 Online High Income Yielding Kitchen Gardens,(untagged),SSIAST,Other Programs,Other Programs,False,1,24
 Online Sri Sri Kids Gardening,(untagged),SSIAST,Other Programs,Other Programs,False,1,1
-Online Sri Sri Yoga Classes,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,True,1,29
-Online Sri Sri Yoga Classes for Kids,SSY - All Programs,Sri Sri School of Yoga,Other Programs,Other Programs,True,1,35
-Online Sri Sri Yoga LevelÂ  1,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,True,1,13
+Online Sri Sri Yoga Classes,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,True,1,29
+Online Sri Sri Yoga Classes for Kids,SSY - All Programs,Sri Sri School of Yoga,Other Programs,Sri Sri Yoga Programs,True,1,35
+Online Sri Sri Yoga LevelÂ  1,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,True,1,13
 Online Wellness Program,Wellness,Wellness Program Desk,Other Programs,Other Programs,True,1,4
 Online Women Wellness Program,Wellness,Wellness Program Desk,Other Programs,Other Programs,True,1,7
 P.R.A.N TTP - Tobacco,(untagged),TTP desk,Other Programs,Other Programs,False,1,82
 Permaculture for beginners,(untagged),VVMVP_Desk,Other Programs,Other Programs,False,1,10
 Prison Program for Staff,others,PRISON SMART,Other Programs,Other Programs,False,1,44
 Recharge sessions,(untagged),MSME,Other Programs,Other Programs,False,1,20
-SpineCare Yoga and Posture Workshop for Children,Spine,Sri Sri yoga DESK,Other Programs,Other Programs,True,1,72
-Sri Sri Hatha Yoga Level 1 - Residential,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Other Programs,False,1,2
+SpineCare Yoga and Posture Workshop for Children,Spine,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,True,1,72
+Sri Sri Hatha Yoga Level 1 - Residential,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,1,2
 Sri Sri Marma Practitioners Training Program,(untagged),Wellness Program Desk,Other Programs,Other Programs,False,1,56
 Sri Sri Natural Farming,others,SSIAST,Other Programs,Other Programs,True,1,1
 TTP Karmayoga,TTP,(none),Other Programs,Other Programs,True,1,43
@@ -351,9 +351,9 @@ Tlex,(untagged),Corporate Desk,Other Programs,Other Programs,False,1,36
 Tlex,(untagged),Corporate Desk,Other Programs,Other Programs,True,1,11
 Training on Bee Keeping Level 2,(untagged),SSIAST,Other Programs,Other Programs,False,1,3
 VTP Reconnect,(untagged),VTP Desk,Other Programs,Other Programs,False,1,10
-Weekend Retreat,(untagged),Sri Sri School of Yoga,Other Programs,Other Programs,False,1,4
+Weekend Retreat,(untagged),Sri Sri School of Yoga,Other Programs,Sri Sri Yoga Programs,False,1,4
 Wellness Program TTP,Wellness,Wellness Program Desk,Other Programs,Other Programs,True,1,46
-YPDS,others,Sri Sri yoga DESK,Other Programs,Other Programs,False,1,62
+YPDS,others,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,1,62
 Rural Happiness Program,YLTP,YLTP  DESK,Rural Programs,Rural Programs,False,4235,109513
 Rural ArtExcel,C&T-UY-MY-NonInstitutional,Children and Teens Desk,Rural Programs,C&T Programs,False,495,28087
 Rural YES,C&T-UY-MY-NonInstitutional,Children and Teens Desk,Rural Programs,C&T Programs,False,408,28235

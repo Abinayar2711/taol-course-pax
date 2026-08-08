@@ -1,5 +1,5 @@
 {
-  "built_on": "2026-08-07",
+  "built_on": "2026-08-08",
   "asof": "2026-08",
   "variant": "parity",
   "states": [
@@ -55,18 +55,25 @@
     "Happiness Programs",
     "Rural Programs",
     "C&T Programs",
+    "Part 2 & DSN Programs",
+    "Sri Sri Yoga Programs",
     "Other Programs"
   ],
   "bucket_rules": {
     "Happiness Programs": "Programs owned by the Happiness Program desk.",
     "Rural Programs": "Programs owned by the YLTP desk.",
     "C&T Programs": "Programs owned by the Children and Teens desk.",
-    "Other Programs": "Every other desk \u2014 Sahaj, Sri Sri Yoga, Part 2 & DSN, YES+, TTP, VTP, Pran, Prison Smart, Eternity, Wellness, Spine."
+    "Part 2 & DSN Programs": "Programs owned by the Part 2 and DSN desk.",
+    "Sri Sri Yoga Programs": "Programs owned by the Sri Sri Yoga desk and the Sri Sri School of Yoga.",
+    "Other Programs": "Every other desk \u2014 Sahaj, YES+, TTP, VTP, Pran, Prison Smart, Eternity, Wellness, Ayurveda Cooking, Vedic Math, MSME, Spine \u2014 plus any course unticked under the named types, so the Total stays complete."
   },
   "desk_buckets": {
     "Happiness Program": "Happiness Programs",
     "YLTP  DESK": "Rural Programs",
-    "Children and Teens Desk": "C&T Programs"
+    "Children and Teens Desk": "C&T Programs",
+    "PART 2 and DSN DESK": "Part 2 & DSN Programs",
+    "Sri Sri yoga DESK": "Sri Sri Yoga Programs",
+    "Sri Sri School of Yoga": "Sri Sri Yoga Programs"
   },
   "default_excluded_by_bucket": {
     "Happiness Programs": [
