@@ -114,8 +114,8 @@ TAOL Yoga and Meditation Program for Educators,HP,Children and Teens Desk,Happin
 Part I Course,HP,Happiness Program,Happiness Programs,Happiness Programs,True,2,17
 Online TAOL Yoga & Meditation Program for Educators,HP,Children and Teens Desk,Happiness Programs,C&T Programs,True,1,19
 PEP,HP,YES+,Happiness Programs,Other Programs,True,1,30
-Online Sahaj Samadhi Dhyana Yoga,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Other Programs,False,7790,37729
-Sahaj Samadhi Dhyana Yoga,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Other Programs,False,5377,83117
+Online Sahaj Samadhi Dhyana Yoga,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Sahaj Samadhi Programs,False,7790,37729
+Sahaj Samadhi Dhyana Yoga,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Sahaj Samadhi Programs,False,5377,83117
 Sri Sri Yoga Level -1,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,2812,74918
 Part 2,AMP,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,2786,298812
 Online Sri Sri Yoga Classes,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,2775,38958
@@ -132,8 +132,8 @@ DSN,DSN,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,869,36198
 "Post Covid Recovery Program - Meditation, Breath and Yoga",(untagged),Happiness Program,Other Programs,Happiness Programs,False,765,7658
 YLTP,YLTP,YLTP  DESK,Other Programs,Rural Programs,False,696,27889
 "Covid Recovery Program - Meditation, Breath and Yoga",others,Happiness Program,Other Programs,Happiness Programs,False,662,5794
-Online Sahaj Samadhi Dhyana Yoga 1on1,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Other Programs,False,581,578
-Sahaj Samadhi Dhyana Yoga 1on1,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Other Programs,False,546,548
+Online Sahaj Samadhi Dhyana Yoga 1on1,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Sahaj Samadhi Programs,False,581,578
+Sahaj Samadhi Dhyana Yoga 1on1,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Sahaj Samadhi Programs,False,546,548
 Prison Program for Inmates,others,PRISON SMART,Other Programs,Other Programs,False,544,34855
 Online Wellness Program,Wellness,Wellness Program Desk,Other Programs,Other Programs,False,542,4163
 SpineCare Yoga and Posture Program for Adults,Spine,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,455,7983
@@ -205,7 +205,7 @@ Sri Sri Yoga Classes for Prenatal and Postnatal Care,SSY - All Programs,Sri Sri 
 Sri Sri Natural Farming,others,SSIAST,Other Programs,Other Programs,False,40,668
 AMP 5 Days,AMP,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,38,8151
 Online Yes+,Institutional,YES+,Other Programs,Other Programs,True,38,1576
-Sahaj Samadhi Dhyana Yoga,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Other Programs,True,37,865
+Sahaj Samadhi Dhyana Yoga,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Sahaj Samadhi Programs,True,37,865
 Online SpineCare Program forÂ  Children,(untagged),Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,36,1210
 Wellness Program for Substance Users,Wellness,Pran Desk,Other Programs,Other Programs,False,36,222
 YLTP,YLTP,YLTP  DESK,Other Programs,Rural Programs,True,36,2722
@@ -234,7 +234,7 @@ APEX 1,(untagged),Corporate Desk,Other Programs,Other Programs,True,21,351
 SELP,Institutional,Happiness Program,Other Programs,Happiness Programs,False,20,9090
 Training on Bee Keeping Level 1,others,SSIAST,Other Programs,Other Programs,False,20,197
 Yes!,(untagged),Children and Teens Desk,Other Programs,C&T Programs,True,20,1894
-Online Sahaj Samadhi Dhyana Yoga,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Other Programs,True,19,102
+Online Sahaj Samadhi Dhyana Yoga,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Sahaj Samadhi Programs,True,19,102
 Online Women Wellness Module,Wellness,Wellness Program Desk,Other Programs,Other Programs,False,19,116
 AMP Intensive,AMP,PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,18,2320
 Prison Program for Inmates,others,PRISON SMART,Other Programs,Other Programs,True,18,923
@@ -280,7 +280,7 @@ WP-SU Rehabs,others,Pran Desk,Other Programs,Other Programs,False,5,44
 Corporate Programs part 2,(untagged),Corporate Desk,Other Programs,Other Programs,True,4,92
 Manual Friendliness Session,(untagged),(none),Other Programs,Other Programs,False,4,49
 NOVICE TTC,(untagged),KYC DESK,Other Programs,Other Programs,False,4,91
-Online Sahaj Samadhi Dhyana Yoga 1on1,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Other Programs,True,4,4
+Online Sahaj Samadhi Dhyana Yoga 1on1,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Sahaj Samadhi Programs,True,4,4
 Prison Program Part 2,(untagged),PART 2 and DSN DESK,Other Programs,Part 2 & DSN Programs,False,4,333
 SMART YES!,others,Children and Teens Desk,Other Programs,C&T Programs,True,4,147
 Sri Sri Yoga Classes,SSY - All Programs,Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,True,4,293
@@ -295,7 +295,7 @@ Online Quit Tobacco Program,others,Wellness Program Desk,Other Programs,Other Pr
 PrajÃ±Ä Yoga TTP,(untagged),TTP desk,Other Programs,Other Programs,False,3,110
 Program for Release from Addictions Naturally (P.R.A.N),(untagged),Wellness Program Desk,Other Programs,Other Programs,False,3,21
 SELP,Institutional,Happiness Program,Other Programs,Happiness Programs,True,3,900
-Sahaj Samadhi Dhyana Yoga 1on1,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Other Programs,True,3,3
+Sahaj Samadhi Dhyana Yoga 1on1,Sahaj,Sahaj Samadhi Meditation Desk,Other Programs,Sahaj Samadhi Programs,True,3,3
 Smart Excel,others,Children and Teens Desk,Other Programs,C&T Programs,True,3,220
 Spine Care TTP,(untagged),Sri Sri School of Yoga,Other Programs,Sri Sri Yoga Programs,False,3,54
 SpineCare Yoga and Posture Workshop - SSRVM School,(untagged),Sri Sri yoga DESK,Other Programs,Sri Sri Yoga Programs,False,3,328

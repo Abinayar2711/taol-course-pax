@@ -69,17 +69,19 @@ HP_TAGS = ["HP"]
 # The rows of the dashboard, in the order they are drawn. Other is last: it is
 # the catch-all, and the app also drops into it any course unticked above.
 BUCKETS = ["Happiness Programs", "Rural Programs", "C&T Programs",
-           "Part 2 & DSN Programs", "Sri Sri Yoga Programs", "Other Programs"]
+           "Sahaj Samadhi Programs", "Part 2 & DSN Programs",
+           "Sri Sri Yoga Programs", "Other Programs"]
 
 # The rows, cut by course desk instead of by tag. Desk names are spelled exactly
 # as the warehouse stores them -- odd capitalisation and the double space in
 # "YLTP  DESK" included -- so this is a lookup, never a match.
-# Every remaining desk (Sahaj, YES+, TTP, VTP, Pran, Prison Smart, Eternity,
-# Wellness, Ayurveda Cooking, Vedic Math, MSME, Spine, GEP) falls to Other.
+# Every remaining desk (YES+, TTP, VTP, Pran, Prison Smart, Eternity, Wellness,
+# Ayurveda Cooking, Vedic Math, MSME, Spine, GEP) falls to Other.
 DESK_BUCKETS = {
     "Happiness Program": "Happiness Programs",
     "YLTP  DESK": "Rural Programs",          # note the double space, as stored
     "Children and Teens Desk": "C&T Programs",
+    "Sahaj Samadhi Meditation Desk": "Sahaj Samadhi Programs",
     "PART 2 and DSN DESK": "Part 2 & DSN Programs",
     "Sri Sri yoga DESK": "Sri Sri Yoga Programs",
     # A second, much smaller yoga desk (218 programs all-time). 215 of them are
@@ -96,11 +98,15 @@ BUCKET_RULES = {
     "Happiness Programs": "Programs owned by the Happiness Program desk.",
     "Rural Programs": "Programs owned by the YLTP desk.",
     "C&T Programs": "Programs owned by the Children and Teens desk.",
+    "Sahaj Samadhi Programs": (
+        "Programs owned by the Sahaj Samadhi Meditation desk — four titles, the "
+        "group and 1-on-1 forms of Sahaj Samadhi Dhyana Yoga, online and in "
+        "person."),
     "Part 2 & DSN Programs": "Programs owned by the Part 2 and DSN desk.",
     "Sri Sri Yoga Programs": (
         "Programs owned by the Sri Sri Yoga desk and the Sri Sri School of Yoga."),
     "Other Programs": (
-        "Every other desk — Sahaj, YES+, TTP, VTP, Pran, Prison Smart, Eternity, "
+        "Every other desk — YES+, TTP, VTP, Pran, Prison Smart, Eternity, "
         "Wellness, Ayurveda Cooking, Vedic Math, MSME, Spine — plus any course "
         "unticked under the named types, so the Total stays complete."),
 }

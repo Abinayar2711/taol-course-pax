@@ -1,8 +1,8 @@
 # TAOL Course & Pax — Year-wise, Apex-wise
 
 Courses and participants by apex — **Karnataka, Telangana, Andhra Pradesh** —
-split into **Happiness / Rural / C&T / Part 2 & DSN / Sri Sri Yoga / Other**, on
-either a calendar or a financial year.
+split into **Happiness / Rural / C&T / Sahaj Samadhi / Part 2 & DSN / Sri Sri
+Yoga / Other**, on either a calendar or a financial year.
 
 Tamil Nadu is held back for now. Its data is still built and still in the
 parquet; `HIDDEN_APEXES` in `build_state_data.py` controls what the app shows, so
@@ -69,9 +69,10 @@ a lookup and never a match — odd capitalisation and all:
 | Happiness | `Happiness Program` |
 | Rural | `YLTP  DESK` (two spaces, as stored) |
 | C&T | `Children and Teens Desk` |
+| Sahaj Samadhi | `Sahaj Samadhi Meditation Desk` |
 | Part 2 & DSN | `PART 2 and DSN DESK` |
 | Sri Sri Yoga | `Sri Sri yoga DESK` **and** `Sri Sri School of Yoga` |
-| Other | everything else — Sahaj (the largest by far), YES+, TTP, VTP, Pran, Prison Smart, Eternity, Wellness, Ayurveda Cooking, Vedic Math, MSME, Spine, GEP |
+| Other | everything else — YES+ (the largest left), TTP, VTP, Pran, Prison Smart, Eternity, Wellness, Ayurveda Cooking, Vedic Math, MSME, Spine, GEP |
 
 The School of Yoga is the judgement call: a second, much smaller yoga desk (218
 programs all-time) where 215 are ordinary Deep Dive and kids' yoga classes, titles
@@ -79,9 +80,9 @@ that also appear under `Sri Sri yoga DESK`. Only a 200H and a 300H Yoga Teacher
 Training sit oddly. Move that one line to Other if the yoga row should be classes
 only.
 
-The two groupings disagree on **121 of 366** course titles — but 63 of those are
-just the Part 2 & DSN and Sri Sri Yoga titles, which the tag grouping has no row
-for. On the original four rows it is **58 of 366**, unchanged.
+The two groupings disagree on **129 of 366** course titles — but 71 of those are
+just the Sahaj, Part 2 & DSN and Sri Sri Yoga titles, which the tag grouping has
+no row for. On the original four rows it is **58 of 366**, unchanged.
 `data/program_bucket_map.csv` lists every title under both, for reference.
 
 ### The program type labels are dropdowns
@@ -102,6 +103,7 @@ What starts ticked, per bucket:
 | **Happiness** | Only *Happiness Program (3 Days)*, *Online Meditation and Breath Workshop*, *Happiness Program*. The other 18 titles in the desk — Sudarshan Chakra Kriya, Deep Sleep, SELP, the Covid-era campaigns, the Spl AoL programs, Part I Course — start off. |
 | **Rural** | Only *Rural Happiness Program* and *YLTP*. Online YLTP, OWLTP, WLTP, AMP - Rural, Online Rural Happiness Program and Project Bharat start off. |
 | **C&T** | Everything except the school batches, the KYC/KYT parenting courses, the special-needs batches and the Smart programs — titles matching `school`, `govt`, `ssrvm`, `kyc`, `kyt`, `know your child/teen`, `deaf`, `blind` or `smart`. 46 titles start off. It cannot key off `course_category`: that flags Art Excel, Utkarsha Yoga and Yes! as institutional too. |
+| **Sahaj Samadhi** | Everything on — all four titles. Note *Sahaj Samadhi Dhyana Yoga 1on1* and its online form are one participant per program by definition: 1,134 programs all-time but only 1,133 pax, so they lift the program count far more than the pax. Untick them if a row of group courses is what is wanted. |
 | **Part 2 & DSN** | Everything on. |
 | **Sri Sri Yoga** | Everything on. |
 | **Other** | Everything on, including the courses unticked above. |
