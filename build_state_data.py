@@ -83,7 +83,8 @@ BUCKET_RULES = {
     "C&T Programs": "Programs owned by the Children and Teens desk.",
     "Other Programs": (
         "Every other desk — Sahaj, Sri Sri Yoga, Part 2 & DSN, YES+, TTP, VTP, "
-        "Pran, Prison Smart, Eternity, Wellness, Spine."),
+        "Pran, Prison Smart, Eternity, Wellness, Spine — plus any course "
+        "unticked under the three named types, so the Total stays complete."),
 }
 
 # What each program type counts BY DEFAULT. Everything else in the bucket is
@@ -118,7 +119,9 @@ CT_OFF = re.compile(
     r"|deaf|blind|smart", re.I)
 RULE_EXCLUDED = {"C&T Programs": lambda title: bool(CT_OFF.search(title))}
 
-# "Other Programs" has no default exclusions: everything in it starts ticked.
+# "Other Programs" has no default exclusions: everything in it starts ticked. It
+# is also where the app puts the titles listed above -- unticking a course moves
+# it to Other rather than dropping it, so the Total is the apex's real activity.
 
 
 def default_excluded_titles(df):

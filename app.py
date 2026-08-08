@@ -10,7 +10,9 @@ Fixed by decision, so they are not on screen as choices:
   grouping  desk_name (the desk that owns the program)
 
 Each program type label is a dropdown of its course names (name_en_gb). Untick a
-course and that section's numbers move.
+course and it drops out of that program type and is counted under Other Programs
+instead, so the Total always reads the apex's full activity. Untick it again in
+Other and it leaves the Total too -- that is the only way to drop a course.
 
 Data is prebuilt by build_state_data.py into ./data/. The warehouse is
 IP-allowlisted to the office network, so a hosted app can never query it.
@@ -27,6 +29,9 @@ DATA = os.path.join(HERE, "data")
 ORG = "TAOL"
 GEO = "apex"
 BCOL = "desk_bucket"
+# The catch-all row. A course unticked under one of the other program types is
+# counted here instead of vanishing, so the Total stays the state's real activity.
+OTHER = "Other Programs"
 
 st.set_page_config(page_title="TAOL Course & Pax — Year-wise, Apex-wise",
                    layout="wide")
@@ -105,6 +110,10 @@ def load(sig):
 df, meta = load((_sig(PARQUET), _sig(META)))
 df = df[df["org"] == ORG]
 BUCKETS = meta["buckets"]
+# Other is rendered last whatever order the build wrote: it can only absorb the
+# courses unticked above it once those rows have been drawn.
+if OTHER in BUCKETS:
+    BUCKETS = [b for b in BUCKETS if b != OTHER] + [OTHER]
 APEXES = [a for a in meta["default_apexes"] if a in set(df[GEO])]
 
 
@@ -180,7 +189,9 @@ def _sync(apex, bucket, key, opts):
 # ---------------------------------------------------------------- header
 st.markdown("<div class='apex-title'>TAOL Course &amp; Pax</div>"
             "<div class='apex-sub'>Year-wise, apex-wise. Click a program type to "
-            "choose which courses it counts.</div>", unsafe_allow_html=True)
+            "choose which courses it counts — an unticked course moves to "
+            "<em>Other Programs</em>, so the Total is always the apex's full "
+            "activity.</div>", unsafe_allow_html=True)
 
 WIDTHS = [2.6] + [1] * (len(years) * 2)
 
@@ -207,9 +218,19 @@ def section(apex):
 
     totals = {"programs": [0] * len(years), "pax": [0] * len(years)}
     rows = []
+    # (bucket, title) pairs unticked above, waiting to be picked up by Other. The
+    # bucket is part of the key because one title can sit under two desks, and
+    # only the rows of the desk it was unticked in should move.
+    spill = set()
+    pairs = pd.Series(list(zip(sub[BCOL], sub["program"])), index=sub.index)
     for b in BUCKETS:
-        pool = (sub[sub[BCOL] == b].groupby("program")["programs"].sum()
+        in_bucket = sub[BCOL] == b
+        pool = (sub[in_bucket].groupby("program")["programs"].sum()
                 .sort_values(ascending=False).index.tolist())
+        rolled_in = []
+        if b == OTHER and spill:
+            rolled_in = sorted({t for _, t in spill} - set(pool))
+            pool = pool + rolled_in
         key = f"pick::{apex}::{b}"
         excl = st.session_state["excl"].get((apex, b), set())
         st.session_state[key] = [t for t in pool if t not in excl]
@@ -219,9 +240,19 @@ def section(apex):
             n_off = len(pool) - len(st.session_state[key])
             label = f"{b}" + (f"  ({n_off} off)" if n_off else "")
             with st.popover(label, width="stretch"):
+                if rolled_in:
+                    st.caption(f"Includes {len(rolled_in)} course(s) unticked "
+                               f"under the other program types. Untick one here "
+                               f"and it leaves the Total as well.")
                 st.multiselect(f"Courses counted in {b} — {apex}", pool, key=key,
                                on_change=_sync, args=(apex, b, key, pool))
-        kept = sub[(sub[BCOL] == b) & (sub["program"].isin(st.session_state[key]))]
+
+        picked = set(st.session_state[key])
+        if b == OTHER:
+            kept = sub[(in_bucket | pairs.isin(spill)) & sub["program"].isin(picked)]
+        else:
+            kept = sub[in_bucket & sub["program"].isin(picked)]
+            spill |= {(b, t) for t in pool if t not in picked}
         agg = kept.groupby(YCOL)[["programs", "pax"]].sum()
         row = {"Program Type": b}
         for i, y in enumerate(years):

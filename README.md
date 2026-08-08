@@ -69,7 +69,13 @@ groupings disagree on **58 of 366** course titles;
 ### The program type labels are dropdowns
 
 Each program type in each apex section opens a list of its course names
-(`name_en_gb`). Untick a course and that section's row and total move with it.
+(`name_en_gb`). Untick a course and it leaves that program type's row — but it is
+**counted under *Other Programs*** instead of disappearing, so the Total is
+always the apex's full activity. Untick it a second time in Other and it leaves
+the Total too; that is the only way to drop a course entirely.
+
+Other's dropdown therefore lists its own desks' courses plus everything rolled in
+from above, with a note saying how many rolled in.
 
 What starts ticked, per bucket:
 
@@ -78,7 +84,7 @@ What starts ticked, per bucket:
 | **Happiness** | Only *Happiness Program (3 Days)*, *Online Meditation and Breath Workshop*, *Happiness Program*. The other 18 titles in the desk — Sudarshan Chakra Kriya, Deep Sleep, SELP, the Covid-era campaigns, the Spl AoL programs, Part I Course — start off. |
 | **Rural** | Only *Rural Happiness Program* and *YLTP*. Online YLTP, OWLTP, WLTP, AMP - Rural, Online Rural Happiness Program and Project Bharat start off. |
 | **C&T** | Everything except the school batches, the KYC/KYT parenting courses, the special-needs batches and the Smart programs — titles matching `school`, `govt`, `ssrvm`, `kyc`, `kyt`, `know your child/teen`, `deaf`, `blind` or `smart`. 46 titles start off. It cannot key off `course_category`: that flags Art Excel, Utkarsha Yoga and Yes! as institutional too. |
-| **Other** | Everything on. |
+| **Other** | Everything on, including the courses unticked above. |
 
 Note *Part I Course* and *3 Days Part I Course* are the Happiness Program under
 its old name. They are off by default and effectively dormant anyway — 3,806
@@ -135,12 +141,6 @@ warehouse holds, and the next step is an event-by-event diff for a single month.
 
 ## Next
 
-- **Decide whether unticked courses should roll into *Other Programs* rather than
-  disappear.** Today the total drops them, so Karnataka CY2025 reads 8,054
-  programs / 51,809 pax against 8,577 / 66,512 of actual activity. Rolling them
-  into Other keeps Happiness / Rural / C&T tight while the total stays complete.
-  Already done that way in the 7 Aug Karnataka Excel; deliberately not in the app
-  yet, pending that conversation.
 - **Split *Other Programs*** into its own rows for **PART 2 and DSN DESK** and
   **Sri Sri yoga DESK**, leaving the remainder as Other. One entry each in
   `DESK_BUCKETS` plus the new names in `BUCKETS`, then rebuild — the app reads the
